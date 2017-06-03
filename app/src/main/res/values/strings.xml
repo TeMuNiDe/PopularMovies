@@ -1,3 +1,17 @@
 <resources>
     <string name="app_name">Popular Movies</string>
+    <string name="api_key">bca5c7c073285ac8fc6f6ffd98bcc4f0</string>
+    <string name="url_popular">https://api.themoviedb.org/3/movie/popular?api_key=%1$s</string>
+    <string name="url_top_rated">https://api.themoviedb.org/3/movie/top_rated?api_key=%1$s</string>
+    <string name="url_image_thumbnail">https://image.tmdb.org/t/p/w185%1$s</string>
+    <string name="url_image_backdrop">https://image.tmdb.org/t/p/w500%1$s</string>
+
+    <string name="menu_sort_popular">Most Popular Movies</string>
+    <string name="menu_sort_top_rated">Top Rated Movies</string>
+    <string name="no_internet">Please Check your internet Connection</string>
+    <string name="connection_error">Connection Error</string>
+    <string name="connection_timed_out">Connection Timed out</string>
+    <string name="unknown_error">Unknown Error Occurred</string>
+     <string name="movie_rating_template">User Rating\u0020\u0020:\u0020%1$.1f</string>
+    <string name="movie_release_template">Release Date\u0020:\u0020%1$s</string>
 </resources>
