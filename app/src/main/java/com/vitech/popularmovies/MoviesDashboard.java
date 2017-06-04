@@ -21,8 +21,8 @@ import java.net.UnknownHostException;
 import java.util.Scanner;
 
 public class MoviesDashboard extends AppCompatActivity {
-RecyclerView moviesView;
-MoviesAdapter moviesAdapter;
+private  RecyclerView moviesView;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -81,6 +81,7 @@ new MovieLoader().execute(R.string.url_popular);
 
             try{
                 JSONObject object = new JSONObject(s);
+               MoviesAdapter moviesAdapter;
                 moviesAdapter = new MoviesAdapter(getApplicationContext(),object.getJSONArray("results"));
                 moviesView.setAdapter(moviesAdapter);
                 moviesAdapter.setOnItemClickListener(new MoviesAdapter.OnItemClickListener() {

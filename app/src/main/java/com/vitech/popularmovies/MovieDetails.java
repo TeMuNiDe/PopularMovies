@@ -10,6 +10,8 @@ import com.squareup.picasso.Picasso;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import java.util.Locale;
+
 public class MovieDetails extends AppCompatActivity {
 
     @Override
@@ -26,8 +28,8 @@ public class MovieDetails extends AppCompatActivity {
             Picasso.with(this).load(buildImageUrl(movie)).placeholder(R.drawable.drawable_loading).into(poster);
 movieTitle.setText(movie.getString("original_title"));
 movieSynopsis.setText(movie.getString("overview"));
-movieRating.setText(getResources().getString(R.string.movie_rating_template,movie.getDouble("vote_average")));
-movieReleaseDate.setText(getResources().getString(R.string.movie_release_template,movie.getString("release_date")));
+movieRating.setText(String.format(Locale.getDefault(),"%.1f",movie.getDouble("vote_average")));
+movieReleaseDate.setText(movie.getString("release_date"));
 
 
 
@@ -40,7 +42,7 @@ movieReleaseDate.setText(getResources().getString(R.string.movie_release_templat
     private String buildImageUrl(JSONObject object)throws JSONException
     {
 
-        String posterPath = object.getString("backdrop_path");
+        String posterPath = object.getString("poster_path");
         return getResources().getString(R.string.url_image_backdrop,posterPath);
 
     }

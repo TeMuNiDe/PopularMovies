@@ -14,8 +14,8 @@ import org.json.JSONObject;
 
 
 class MoviesAdapter extends RecyclerView.Adapter<MoviesAdapter.MovieHolder> {
-   private Context context;
-   private JSONArray movies_list;
+  final private Context context;
+ final   private JSONArray movies_list;
  private   OnItemClickListener onItemClickListener;
 
  void setOnItemClickListener(OnItemClickListener onItemClickListener){
@@ -64,7 +64,7 @@ try{
 
     }
     class MovieHolder extends RecyclerView.ViewHolder{
-        ImageView view;
+       final ImageView view;
         JSONObject object;
       MovieHolder(View itemView) {
             super(itemView);

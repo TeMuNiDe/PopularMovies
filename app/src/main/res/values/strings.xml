@@ -12,6 +12,5 @@
     <string name="connection_error">Connection Error</string>
     <string name="connection_timed_out">Connection Timed out</string>
     <string name="unknown_error">Unknown Error Occurred</string>
-     <string name="movie_rating_template">User Rating\u0020\u0020:\u0020%1$.1f</string>
-    <string name="movie_release_template">Release Date\u0020:\u0020%1$s</string>
+    <string name="movie_release_template">Released on\u0020:\u0020%1$s</string>
 </resources>
