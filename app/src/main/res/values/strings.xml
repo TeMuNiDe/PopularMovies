@@ -1,15 +1,23 @@
 <resources>
     <string name="app_name">Popular Movies</string>
-    <string name="api_key">[ YOUR API KEY ]</string>
+    <string name="api_key"> bca5c7c073285ac8fc6f6ffd98bcc4f0</string>
     <string name="url_popular">https://api.themoviedb.org/3/movie/popular?api_key=%1$s</string>
     <string name="url_top_rated">https://api.themoviedb.org/3/movie/top_rated?api_key=%1$s</string>
+    <string name="url_favorite">content://com.vitech.popularmovies/movies/</string>
     <string name="url_image_thumbnail">https://image.tmdb.org/t/p/w185%1$s</string>
     <string name="url_image_backdrop">https://image.tmdb.org/t/p/w500%1$s</string>
-
+    <string name="url_video_link">https://www.youtube.com/watch?v=%1$s</string>
+    <string name="url_trailers">https://api.themoviedb.org/3/movie/%1$d/videos?api_key=%2$s</string>
+    <string name="url_reviews">https://api.themoviedb.org/3/movie/%1$d/reviews?api_key=%2$s</string>
     <string name="menu_sort_popular">Most Popular Movies</string>
     <string name="menu_sort_top_rated">Top Rated Movies</string>
+    <string name="menu_sort_favorite">Favorite Movies</string>
     <string name="no_internet">Please Check your internet Connection</string>
     <string name="connection_error">Connection Error</string>
     <string name="connection_timed_out">Connection Timed out</string>
     <string name="unknown_error">Unknown Error Occurred</string>
+    <string name="title_synopsis">Synopsis</string>
+    <string name="title_trailers">Trailer(s)</string>
+    <string name="title_reviews">Review(s)</string>
+    <string name="menu_title">Show</string>
 </resources>

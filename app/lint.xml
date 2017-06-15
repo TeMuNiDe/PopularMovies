@@ -2,5 +2,6 @@
 <lint>
     <issue id="IconLocation">
         <ignore path="src/main/res/drawable/image_loading.png" />
+        <ignore path="src/main/res/drawable/image_loading.webp" />
     </issue>
 </lint>

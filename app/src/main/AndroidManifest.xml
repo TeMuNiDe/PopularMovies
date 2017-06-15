@@ -26,6 +26,11 @@
                 />
 
         </activity>
+        <provider
+            android:authorities="com.vitech.popularmovies"
+            android:name=".data.FavoriteMoviesProvider"
+            android:exported="false"
+            />
     </application>
 
 </manifest>

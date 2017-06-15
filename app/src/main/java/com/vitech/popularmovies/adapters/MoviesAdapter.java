@@ -1,4 +1,4 @@
-package com.vitech.popularmovies;
+package com.vitech.popularmovies.adapters;
 
 import android.content.Context;
 import android.support.v7.widget.RecyclerView;
@@ -7,25 +7,25 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 
 import com.squareup.picasso.Picasso;
+import com.vitech.popularmovies.R;
 
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
 
-class MoviesAdapter extends RecyclerView.Adapter<MoviesAdapter.MovieHolder> {
+public class MoviesAdapter extends RecyclerView.Adapter<MoviesAdapter.MovieHolder> {
   final private Context context;
- final   private JSONArray movies_list;
+ final  private JSONArray movies_list;
  private   OnItemClickListener onItemClickListener;
 
- void setOnItemClickListener(OnItemClickListener onItemClickListener){
+ public void setOnItemClickListener(OnItemClickListener onItemClickListener){
      this.onItemClickListener = onItemClickListener;
  }
-    MoviesAdapter(Context context, JSONArray movies_list){
+    public MoviesAdapter(Context context, JSONArray movies_list){
     this.context = context;
     this.movies_list = movies_list;
-}
-
+ }
     @Override
     public MovieHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         ImageView movie   = new ImageView(context);
@@ -64,21 +64,21 @@ try{
 
     }
     class MovieHolder extends RecyclerView.ViewHolder{
-       final ImageView view;
+        ImageView view;
         JSONObject object;
-      MovieHolder(View itemView) {
+        MovieHolder(View itemView) {
             super(itemView);
 
             view = (ImageView)itemView;
-          view.setOnClickListener(new View.OnClickListener() {
-              @Override
-              public void onClick(View v) {
+            view.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
                   onItemClickListener.onItemClick(object);
               }
           });
       }
     }
-    interface OnItemClickListener{
+  public  interface OnItemClickListener{
         void onItemClick(JSONObject object);
     }
 }
