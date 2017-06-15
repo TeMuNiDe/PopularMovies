@@ -53,7 +53,7 @@ public class MovieDetails extends AppCompatActivity implements LoaderManager.Loa
         ButterKnife.bind(this);
         try {
             final JSONObject movie = new JSONObject(getIntent().getStringExtra("movie"));
-            Picasso.with(this).load(buildImageUrl(movie)).placeholder(R.drawable.drawable_loading).into(poster);
+            Picasso.with(this).load(buildImageUrl(movie)).placeholder(R.drawable.drawable_loading).error(R.drawable.ic_warning_black_24dp).into(poster);
             movieTitle.setText(movie.getString("original_title"));
             movieSynopsis.setText(movie.getString("overview"));
             movieRating.setText(String.format(Locale.getDefault(),"%.1f",movie.getDouble("vote_average")));

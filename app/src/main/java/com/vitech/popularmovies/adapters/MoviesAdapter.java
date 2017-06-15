@@ -41,7 +41,7 @@ public class MoviesAdapter extends RecyclerView.Adapter<MoviesAdapter.MovieHolde
     @Override
     public void onBindViewHolder(MovieHolder holder, int position) {
 try{
-    Picasso.with(context).load(buildImageUrl(movies_list.getJSONObject(position))).placeholder(R.drawable.drawable_loading).into(holder.view);
+    Picasso.with(context).load(buildImageUrl(movies_list.getJSONObject(position))).placeholder(R.drawable.drawable_loading).error(R.drawable.ic_warning_black_24dp).into(holder.view);
     holder.object = movies_list.getJSONObject(position);
 
 }catch (JSONException j){
