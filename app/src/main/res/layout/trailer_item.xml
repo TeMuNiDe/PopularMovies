@@ -3,6 +3,8 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:id="@+id/trailer_name"
+    android:focusable="false"
+    android:focusableInTouchMode="false"
     android:drawableStart="@drawable/ic_ondemand_video_black_24dp"
     android:drawablePadding="20dp"
     android:gravity="center_vertical"

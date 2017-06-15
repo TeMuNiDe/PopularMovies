@@ -104,7 +104,8 @@
         <android.support.v7.widget.RecyclerView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/trailer_view"/>
+            android:id="@+id/trailer_view"
+            />
 
         <TextView
             android:layout_width="match_parent"
@@ -113,13 +114,13 @@
             android:textStyle="bold|italic"
             android:padding="10dp"
             android:textSize="24sp"
-
             android:textColor="@color/normal_text_color"
             />
         <android.support.v7.widget.RecyclerView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/re_view_view"/>
+            android:id="@+id/re_view_view"
+            />
 
     </LinearLayout>
 </android.support.v4.widget.NestedScrollView>
