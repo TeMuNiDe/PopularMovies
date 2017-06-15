@@ -1,6 +1,6 @@
 <resources>
     <string name="app_name">Popular Movies</string>
-    <string name="api_key"> bca5c7c073285ac8fc6f6ffd98bcc4f0</string>
+    <string name="api_key">[YOUR API KEY]</string>
     <string name="url_popular">https://api.themoviedb.org/3/movie/popular?api_key=%1$s</string>
     <string name="url_top_rated">https://api.themoviedb.org/3/movie/top_rated?api_key=%1$s</string>
     <string name="url_favorite">content://com.vitech.popularmovies/movies/</string>
